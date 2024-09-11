@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,15 @@
 
 
     <style>
-   
         * {
             margin: 0px;
             padding: 0px;
         }
+
         body {
+            width: 100vw;
             background: #f5f5f5;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -26,16 +28,20 @@
 
 
         .section1 {
-            
+
             width: 70%;
             height: 8rem;
-            background: #2980B9;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: #2980B9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+            /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            border-radius: 5px;
+           
         }
 
 
@@ -43,8 +49,9 @@
             width: 40%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
+            gap:10rem;
         }
 
 
@@ -72,9 +79,9 @@
             border: 1px solid rgba(138, 127, 255, 0.341);
             display: flex;
             flex-direction: column;
-            justify-content:start;
+            justify-content: start;
             align-items: start;
-            
+
             /* padding: 10px; */
         }
 
@@ -100,39 +107,54 @@
             border: 1px solid aquamarine;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: start;
             align-items: start;
             /* padding: 10px; */
         }
 
 
         .section-title {
-            height: 20%;
+            height: 40%;
             color: aquamarine;
-            font-weight: bold;
+            font-weight:bolder;
+
         }
+
         .ed-table {
             width: 70%;
             height: 100%;
-            border: 1px solid gray;
-            /* border-collapse: collapse;
-             */
+            border: 1px solid rgb(178, 28, 205);
+            border-collapse: collapse;
+
         }
+
+        table{
+        border-collapse: collapse;
+        }
+        th {
+            background-color: rgb(178, 28, 205);
+            color: #fff;
+            /* border-collapse: collapse; */
+        }
+
         th,
         td {
             padding: 1rem;
-            border: 1px solid gray;
-            border-collapse: collapse;
+            border: 1px solid rgb(178, 28, 205);
         }
+       
+        
         .companies {
-            font-weight:bold  ;
+            font-weight: bold;
             color: rgb(222, 30, 30);
         }
+
         .color-primary {
             align-content: top;
             font-size: larger;
             color: blue;
-        } 
+        }
+
         .section5 {
             width: 70%;
             height: 10rem;
@@ -145,11 +167,12 @@
             /* padding: 10px; */
         }
 
-        li{
+        li {
             list-style: square;
             margin-left: 2rem;
 
         }
+
         /* h1{
             font-size: 30px;
             size: 10px;
@@ -167,17 +190,79 @@
         }
 
         .section6 a {
-            margin: 0 15px; /* Add margin to space out the icons */
-            color: black; /* Ensures text and icons are visible */
+            margin: 0 15px;
+            /* Add margin to space out the icons */
+            color: black;
+            /* Ensures text and icons are visible */
             text-decoration: none;
         }
 
-        i{
-            font-size: 24px;
+        i {
+            font-size: 15px;
         }
-        .section9{
+
+        /* .section9{
             font-size: 2rem;
+        } */
+
+        .section7 {
+            width: 70%;
+            height: 4rem;
+            background: #74ebd5;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
+
+        /* From Uiverse.io by Codecite */
+        button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
     </style>
 </head>
 
@@ -201,48 +286,50 @@
             Objective
         </h1>
         <br>
-        <p >
-           Objective Details
+        <p style="margin-left:20px ;">
+            Objective Details
         </p>
     </div>
     <div class="section3">
 
         <h1>Education</h1>
 
-       <table class="ed-teble">
-        <tr>
-            <th>degrees</th>
-            <th>schooling</th>
-            <th>Campus</th>
-        </tr>
-        <tr>
-            <td>B-Tech</td>
-            <td>NSHSS</td>
-            <td>SIET</td>
-        </tr>
+        <table class="ed-teble">
+            <tr>
+                <th>Degrees</th>
+                <th>Schooling</th>
+                <th>Campus</th>
+            </tr>
+            <tr>
+                <td>B-Tech</td>
+                <td>NSHSS</td>
+                <td>SIET</td>
+            </tr>
 
-        <tr>
-            <td>B-Tech</td>
-            <td>NSHSS</td>
-            <td>SIET</td>
-        </tr>
+            <tr>
+                <td>B-Tech</td>
+                <td>NSHSS</td>
+                <td>SIET</td>
+            </tr>
 
-        <tr>
-            <td>B-Tech</td>
-            <td>NSHSS</td>
-            <td>SIET</td>
-        </tr>
+            <tr>
+                <td>B-Tech</td>
+                <td>NSHSS</td>
+                <td>SIET</td>
+            </tr>
 
-       </table>
+        </table>
     </div>
     <div class="section4">
-        <h1 class="section9">Intership</h1>
+        <h1>Intership</h1>
         <p>
-            <span class="companies">ZOHO</span> an Indian multinational technology company that makes computer software and web-based business tools
+            <span class="companies">ZOHO</span> an Indian multinational technology company that makes computer software
+            and web-based business tools
         </p>
         <br>
         <p>
-            <span class="companies">ZOHO</span> an Indian multinational technology company that makes computer software and web-based business tools
+            <span class="companies">ZOHO</span> an Indian multinational technology company that makes computer software
+            and web-based business tools
         </p>
 
         <!-- </p>
@@ -253,7 +340,7 @@
     </div>
 
     <div class="section5">
-        <h1 >
+        <h1>
             Skills
         </h1>
         <ul>
@@ -266,7 +353,7 @@
 
     <div class="section6">
         <a href="tel:+91 7305294524">
-            <i class="fa-solid fa-phone text-white"></i> 
+            <i class="fa-solid fa-phone text-white"></i>
         </a>
         <a href="mailto:postbox299@gmail.com">
             <i class="fa-solid fa-envelope"></i>
@@ -276,8 +363,12 @@
             <i class="fa-brands fa-linkedin"></i>
         </a>
     </div>
-    
-
-
+    <div>
+        <button>
+            <span class="text">Button</span>
+          </button>
+          
+    </div>
 </body>
+
 </html>
