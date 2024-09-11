@@ -22,15 +22,18 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            
+            justify-content: center;
             align-items: center;
+            overflow-x: hidden;
+            border-radius: 10%;
         }
 
 
         .section1 {
-
+            position:-webkit-sticky;
             width: 70%;
-            height: 8rem;
+            height: 12rem;
             background: #2980B9;
             /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
@@ -50,7 +53,7 @@
             height: 100%;
             display: flex;
             justify-content: start;
-            align-items: start;
+            align-items: center;
             gap:10rem;
         }
 
@@ -68,7 +71,13 @@
         .profile-img {
             height: 8rem;
             width: 8rem;
-            border-radius: 50%;
+            border-radius: 100px;
+            background: rgba( 255, 255, 255, 1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 100px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
 
@@ -76,7 +85,7 @@
             width: 70%;
             height: 8rem;
             /* background-color: aquamarine; */
-            border: 1px solid rgba(138, 127, 255, 0.341);
+            border: 1px solid aquamarine;
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -102,8 +111,8 @@
 
         .section4 {
             width: 70%;
-            height: 10rem;
-            /* background-color: aquamarine; */
+            height: 12rem;
+            background-color: #f5f5f5;
             border: 1px solid aquamarine;
             display: flex;
             flex-direction: column;
@@ -123,7 +132,7 @@
         .ed-table {
             width: 70%;
             height: 100%;
-            border: 1px solid rgb(178, 28, 205);
+            border: 1px solid aquamarine;
             border-collapse: collapse;
 
         }
@@ -225,35 +234,32 @@
         /* From Uiverse.io by Codecite */
         button {
   align-items: center;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border: 0;
+  background-image: linear-gradient(144deg, #a78e8e, #5b42f3 50%, #00ddeb);
+  border:4px solid black;
   border-radius: 10px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(120, 117, 122, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
   font-size: 18px;
   justify-content: center;
-  line-height: 1em;
+  line-height: 1rem;
   max-width: 100%;
   min-width: 140px;
   padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+  color: #00ddeb;
+  line-height: 1rem;
+  z-index: -1;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 button span {
-  background-color: rgb(5, 6, 45);
+  background-color:linear-gradient(144deg, #43918d59, #5b42f3 50%, #00ddeb);
   padding: 16px 24px;
   border-radius: 50px;
   width: 100%;
   height: 100%;
-  transition: 300ms;
+    
 }
 
 button:hover span {
@@ -261,8 +267,33 @@ button:hover span {
 }
 
 button:active {
-  transform: scale(0.9);
+  transform: scale(.9);
 }
+
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, 1) 0%,
+											  rgba(0, 0, 0, 1) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+}
+
     </style>
 </head>
 
@@ -369,6 +400,10 @@ button:active {
           </button>
           
     </div>
+
+
 </body>
+
+
 
 </html>
