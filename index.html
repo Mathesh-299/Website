@@ -22,14 +22,13 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
-            
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
             border-radius: 10%;
         }
-
-
+        
+        
         .section1 {
             position:-webkit-sticky;
             width: 70%;
@@ -43,7 +42,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            border-radius: 5px;
+            /* border-radius: 5px; */
+            border-radius: 10px;
            
         }
 
@@ -69,8 +69,8 @@
 
 
         .profile-img {
-            height: 8rem;
-            width: 8rem;
+            height: 11rem;
+            width: 11rem;
             border-radius: 100px;
             background: rgba( 255, 255, 255, 1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -91,6 +91,31 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             justify-content: start;
             align-items: start;
 
+            border-radius: 10px;
+            /* padding: 10px; */
+        }
+        .section10 {
+            width: 70%;
+            height: 6rem;
+            /* background-color: aquamarine; */
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+border-radius: 10px;
+            /* padding: 10px; */
+        }
+        .section11 {
+            width: 70%;
+            height: 8rem;
+            /* background-color: aquamarine; */
+            border: 1px solid aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+border-radius: 10px;
             /* padding: 10px; */
         }
 
@@ -100,7 +125,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             height: 70%;
             height: 17rem;
             /* background-color: aquamarine; */
-            border: 1px solid rgb(255, 127, 178);
+            border: 1px solid aquamarine;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -111,7 +136,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         .section4 {
             width: 70%;
-            height: 12rem;
+            height: 8rem;
             background-color: #f5f5f5;
             border: 1px solid aquamarine;
             display: flex;
@@ -123,9 +148,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 
         .section-title {
-            height: 40%;
-            color: aquamarine;
-            font-weight:bolder;
+            height: 20%;
+            color: rgb(0, 0, 0);
+            /* font-weight:; */
+            font-size: 30px;
 
         }
 
@@ -141,7 +167,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-collapse: collapse;
         }
         th {
-            background-color: rgb(178, 28, 205);
+            background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
             color: #fff;
             /* border-collapse: collapse; */
         }
@@ -149,7 +178,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         th,
         td {
             padding: 1rem;
-            border: 1px solid rgb(178, 28, 205);
+            border: 1px solid aquamarine;
         }
        
         
@@ -178,8 +207,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         li {
             list-style: square;
-            margin-left: 2rem;
-
+            margin-left: 3rem;
+font-size: 18px;
         }
 
         /* h1{
@@ -234,7 +263,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         /* From Uiverse.io by Codecite */
         button {
   align-items: center;
-  background-image: linear-gradient(144deg, #a78e8e, #5b42f3 50%, #00ddeb);
+  background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); 
   border:4px solid black;
   border-radius: 10px;
   box-shadow: rgba(120, 117, 122, 0.2) 0 15px 30px -5px;
@@ -293,14 +324,20 @@ button:active {
 											  rgba(0, 0, 0, 1) 75%,
 											  transparent)
 }
-
+.page{
+    font-size: larger;
+}
+.page1{
+    font-size: large;
+    /* margin: 20px; */
+}
     </style>
 </head>
 
 <body>
     <div class="section1">
         <div class="profile-img-section">
-            <img src="./assets/img/cat.jpg" alt="error" class="profile-img">
+            <img src="./assets/img/mine.jpg" alt="error" class="profile-img">
 
         </div>
         <div class="profile-data">
@@ -308,17 +345,26 @@ button:active {
                 Mathesh M
             </h1>
             <h3>
-                mathesh299@gmail.com
+                postbox2992005@gmail.com
             </h3>
         </div>
     </div>
     <div class="section2">
         <h1 class="section-title">
+            About Me
+        </h1>
+        <br>
+        <p class="page">
+            Motivated third-year IT student with proficiency in the MERN stack and Spring framework, along with a solid foundation in data structures and algorithms. Seeking an internship position to apply my skills in real-world software development, contribute to innovative projects, and continue expanding my technical knowledge.
+        </p>
+    </div>
+    <div class="section10">
+        <h1 class="section-title">
             Objective
         </h1>
         <br>
-        <p style="margin-left:20px ;">
-            Objective Details
+        <p class="page">
+            Seeking a challenging position in dynamic software development environment where I can utilize my skills to contribute to the success of the working company.
         </p>
     </div>
     <div class="section3">
@@ -328,40 +374,35 @@ button:active {
         <table class="ed-teble">
             <tr>
                 <th>Degrees</th>
-                <th>Schooling</th>
                 <th>Campus</th>
+                <th>Score</th>
             </tr>
             <tr>
-                <td>B-Tech</td>
+                <td>High School</td>
                 <td>NSHSS</td>
-                <td>SIET</td>
-            </tr>
-
-            <tr>
-                <td>B-Tech</td>
-                <td>NSHSS</td>
-                <td>SIET</td>
+                <td>79</td>
             </tr>
 
             <tr>
-                <td>B-Tech</td>
+                <td>Higher Secondary</td>
                 <td>NSHSS</td>
-                <td>SIET</td>
+                <td>82</td>
+            </tr>
+
+            <tr>
+                <td>Bachelor of Technology in Information Technology</td>
+                <td>SSIET</td>
+                <td>81</td>
             </tr>
 
         </table>
     </div>
     <div class="section4">
         <h1>Intership</h1>
-        <br>    
-        <p>
-            <span class="companies">ZOHO</span> an Indian multinational technology company that makes computer software
-            and web-based business tools
-        </p>
-        <br>
-        <p>
-            <span class="companies"></span> an Indian multinational technology company that makes computer software
-            and web-based business tools
+        <br>   
+        <p class="page1">
+          <span class="companies">
+        Web Development:</span> Intern in November 2023 Contributed to front-end and back-end development tasks using HTML, CSS, JavaScript, and related technologies. Assisted in creating responsive web designs and enhancing user experience.
         </p>
 
         <!-- </p>
@@ -376,13 +417,23 @@ button:active {
             Skills
         </h1>
         <ul>
-            <li>Mern</li>
-            <li>SpringBoot</li>
-            
-            <li>Mongodb</li>
+            <li>Programming Languages: Java, JavaScript, SQL</li>
+            <li>Frameworks: MERN Stack (MongoDB, Express, React, Node.js), Spring Boot</li>
+            <li>Web Development: HTML, CSS, Bootstrap</li>
+            <li>Databases: MySQL, MongoDB</li>
         </ul>
     </div>
 
+    
+    <div class="section11">
+        <h1 class="section-title">
+        Acknowledgment
+        </h1>
+        <br>
+        <p class="page">
+            I would like to express my deepest gratitude to all those who supported and guided me throughout my academic journey. I am sincerely thankful to my professors for their invaluable knowledge and mentorship, and to my peers for their collaboration and encouragement.
+        </p>
+    </div>
     <div class="section6">
         <a href="tel:+91 7305294524">
             <i class="fa-solid fa-phone text-white"></i>
@@ -395,13 +446,16 @@ button:active {
             <i class="fa-brands fa-linkedin"></i>
         </a>
     </div>
-    <div>
-        <button>
-            <span class="text">Button</span>
-          </button>
-          
-    </div>
 
+    <div >
+        <a href="https://github.com/Mathesh-299" target="_blank"><button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+            </svg>
+            <p style="color: white;">Click Me!</p>
+          </button>
+</a>
+    </div>
 
 </body>
 

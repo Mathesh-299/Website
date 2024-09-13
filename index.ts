@@ -6,6 +6,4 @@ function myfunction(data1:number,data2:number){
         console.log("Not available");
     }
 }
-// myfunction(1);
-// myfunction(1,true);
 myfunction(1,2);
