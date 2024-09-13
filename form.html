@@ -27,8 +27,8 @@
         .login-container {
             background-color: #fff;
             border-radius: 8px;
-            height: 40vh;
-            width: 30vw;
+            height: 60vh;
+            width: 25vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,10 +85,10 @@
             <!-- <form class="login-form"> -->
             <input type="text" name="name" id="name" placeholder="Name">
             <input type="email" name="" id="email" placeholder="Email">
+            <input type="age" name="" id="number" placeholder="Age">
             <input type="number" name="" id="number" placeholder="Phone">
             <input type="password" name="" id="password" placeholder="Password">
             <button type="submit" class="submit-btn">submit</button>
-            <!-- <button class="submit-btn" onclick="formdata()">Register</button> -->
         </form>
     </div>
 </body>
@@ -97,19 +97,12 @@
         e.preventDefault();
         let name = document.getElementById("name").value
         let email = document.getElementById("email").value
+        let age= document.getElementById("number").value
         let number = document.getElementById("number").value
         let password = document.getElementById("password").value
         console.log(name)
-        // document.write(name)
-        const data = {
-            username: name,
-            useremail: email,
-            userphone: number,
-            userpassword: password
-        }
-        const { username, useremail, userphone, userpassword } = data
-        console.log(useremail)
     }
+    
     let data1 = [1, 2, 3, 4]
     let data2 = ['a', 'b', 'c', 'd']
     let data3 = [...data1, false, ...data2]
