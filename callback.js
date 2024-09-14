@@ -50,8 +50,8 @@ balancechecker()
 
 
 async function api(){
-    const response=await fetch('https://66e526e55cc7f9b6273c6bb6.mockapi.io/Register')
-    const data1=await response.json()
+   // const response=await fetch('https://66e526e55cc7f9b6273c6bb6.mockapi.io/Register')
+    //const data1=await response.json()
     //console.log(data1)
     // return data1;
     
@@ -67,16 +67,15 @@ async function api(){
         
     }
 }
-// api()
 async function apidata1() {
     const apidata=await api()
     //console.log(apidata)
     const modedata=[{
         "name":"hello"
     }]
-    const stru=modedata.map((data)=>{console.log(data)})
-    const structure=apidata.map((data)=>{console.log(data)})
-    
-}
+    const stuu=apidata.filter((data) => data.ifActive)
+    console.log(stuu)
+    const structure=stuu.map((data)=>{console.log(data)})
 
+}
 apidata1()
